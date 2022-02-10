@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    // function s() {
+    //     let a = 10
+    //     let b = 5
+    //     return a*b
+    // }
+    // console.log(s())
+
+    // // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    // function s() {
+    //     let r = 5
+    //     let s = Math.PI * Math.pow( r, 2 )
+    //     return s
+    // }
+    // console.log(s())
+
+    // // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    // function s() {
+    //     let h = 8
+    //     let r = 3
+    //     let s = 2*Math.PI*Math.pow( r, 2) + 2*Math.PI*r*h
+    //     return s
+    // }
+    // console.log(s())
+
+    // // - створити функцію яка приймає масив та виводить кожен його елемент
+    // let numbers = [14, 18, 20,45]
+    // function array (x) {
+    //     for (let i = 0; i<x.length; i++) {
+    //         console.log(x[i])
+    // }
+    // }
+    // array(numbers)
+
+    // // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    // function words (text) {
+    //     document.write(`<p>${text}</p>`)
+    //     document.write(`<p>${text}</p>`)
+    //     for (let i = 0; i <= 0; i++) {
+    //        document.write(`<p>${text}</p>`)
+    //     }
+    // }
+    // words('bora bora')
+
+    // // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    // function words (text) {
+    //     document.write(`<ul>`)
+    //     document.write(`<li>${text}</li>`)
+    //     document.write(`<li>${text}</li>`)
+    //     document.write(`<li>${text}</li>`)
+    //     document.write(`</ul>`)
+    // }
+    // words('bora bora')
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+    // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    // function elements(text, number) {
+    //     document.write(`<ul>`)
+    //     for (let i = 0; i < number; i++) {
+    //         document.write(`<li>${text}</li>`);
+    //     }
+    //     document.write(`</ul>`)
+    // }
+    // elements('bora bora', 3);
+
+    // // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+    // let elements = [23, true,'bora', 2021, false];
+    // function primitives (array){
+    //     document.write(`<ol>`)
+    //         for (let i = 0; i < array.length; i++) {
+    //             document.write(`<li>${array[i]}</li>`);
+    //         }
+    //     document.write(`</ol>`)
+    // }
+    // primitives(elements);
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    let account = [{id: 1, name: 'Ivan', age: 25}, {id: 2, name: 'Andriy', age: 23}, {id: 3, name: 'Alex', age: 27}];
+    function object(array) {
+        for (const element of array) {
+            document.write(`<div>${element.id}.${element.name} - ${element.age}</div>`);
+        }
+    }
+    object(account);
+</script>
+
+</body>
+</html>
